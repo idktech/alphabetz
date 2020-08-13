@@ -915,6 +915,15 @@
                         </a>
                      </div>
                   </div>
+                  <!-- image14 -->
+                  <div class="staff col-lg-3 col-md-6 col-sm-6">
+                     <div class="polaroid-item">
+                        <a href="img\gallery14.jpg" data-gal="prettyPhoto[gallery]">
+                           <img alt="" src="img\gallery14.jpg" class="img-responsive">
+                           <p>Spooky Skeleton</p>
+                        </a>
+                     </div>
+                  </div>
                </div>
                <!-- /lightbox -->
             </div>
@@ -937,13 +946,32 @@
             </div>
             <!-- Section heading -->
             <div class="section-heading margin1">
-               <h2>Contact Us</h2>
+               <h2>Contact</h2>
                <!-- divider -->
                <div class="hr"></div>
             </div>
             <!-- Contact -->
             <div class="container">
-
+               <!-- Contact Form -->
+               <div class="col-md-5">
+                  <!-- Form Starts -->
+                  <div id="contact_form">
+                     <h4>Send Us a Message</h4>
+                     <div class="form-group">
+                        <label>Name:</label><input type="text" name="name" class="form-control input-field" required="">
+                        <label>Email:</label><input type="email" name="email" class="form-control input-field"
+                           required="">
+                        <label>Subject:</label><input type="text" name="subject" class="form-control input-field"
+                           required="">
+                     </div>
+                     <label>Message:</label>
+                     <textarea name="message" id="message" class="textarea-field form-control" rows="4"
+                        required=""></textarea>
+                     <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Send message</button>
+                  </div>
+                  <!-- Contact results -->
+                  <div id="contact_results"></div>
+               </div>
                <div class="res-margin">
                   <div class="col-md-6 col-md-offset-1 well text-center">
                      <h4>Information</h4>
@@ -951,7 +979,7 @@
                      <div class="contact-info ">
                         <p><i class="fa fa-envelope margin-icon"></i><a
                               href="mailto:alphabetz.daycare@outlook.com">alphabetz.daycare@outlook.com</a></p>
-                        <p><a href="tel:+13603868201"><i class="fa fa-phone margin-icon"></i>Call us: +1
+                        <p><a href="tel:+13603868201"><i class="fa fa-phone margin-icon"></i>+1
                               360-386-8201</a></p>
                         <p><i class="fa fa-map-marker margin-icon"></i>We are located at <br> 6003 83rd Pl NE,
                            Marysville, WA
@@ -1032,7 +1060,10 @@
             <!-- Credits-->
             <div class="credits col-md-12 text-center">
                <hr>
-               2020 - Designed by <a href="http://ivaylo.me">ivaylo.me</a>
+               ©
+               <script type="text/javascript">
+                  document.write(new Date().getFullYear());
+               </script> - WebDev <a href="http://ivaylo.me">ivaylo.me</a>
                <!-- Go To Top Link -->
                <div class="page-scroll hidden-sm hidden-xs">
                   <a href="#page-top" class="back-to-top"><i class="fa fa-angle-up"></i></a>

@@ -954,25 +954,38 @@
             <div class="container">
                <!-- Contact Form -->
                <div class="col-md-5">
-
-
                   <!-- Form Starts -->
                   <div id="contact_form">
                      <h4>Send Us a Message</h4>
                      <div class="form-group">
-                        <label>First Name:</label><input type="text" name="name" class="form-control input-field"
-                           required="">
-                        <label>Last Name:</label><input type="text" name="name" class="form-control input-field"
-                           required="">
-                        <label>Email:</label><input type="email" name="email" class="form-control input-field"
-                           required="">
-                        <label>Subject:</label><input type="text" name="subject" class="form-control input-field"
-                           required="">
+                        <form id="contactForm" action="index.php#contact" method="post" class="contact-form">
+                           <input type="hidden" name="send_frm" id="send_frm" value="1">
+                           <?php
+								if($msg != ""){
+							?>
+                           <div class="single-input color-2 mb-10">
+                              <?php echo $msg; ?>
+                           </div>
+                           <?php
+								} 
+							?>
+                           <label>First Name:</label><input type="text" name="fname" class="form-control input-field"
+                              required="">
+                           <label>Last Name:</label><input type="text" name="lname" class="form-control input-field"
+                              required="">
+                           <label>Mobile</label>
+                           <input type="text" name="phone" class="form-control input-field" placeholder="Phone Number"
+                              onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Number'" required>
+                           <label>Email:</label><input type="email" name="email" class="form-control input-field"
+                              required="">
+                           <label>Subject:</label><input type="text" name="subject" class="form-control input-field"
+                              required="">
                      </div>
                      <label>Message:</label>
                      <textarea name="message" id="message" class="textarea-field form-control" rows="4"
                         required=""></textarea>
                      <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Send message</button>
+                     </form>
                   </div>
 
 

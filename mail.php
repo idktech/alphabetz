@@ -1,6 +1,7 @@
 <?php
     $to = 'idk@gmx.com';
     $firstname = $_POST["fname"];
+    $lastname = $_POST["lname"];
     $phone = $_POST["phone"];
     $email= $_POST["email"];
     $text= $_POST["message"];

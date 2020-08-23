@@ -973,6 +973,7 @@
                               required="">
                            <label>Last Name:</label><input type="text" name="lname" class="form-control input-field"
                               required="">
+                           
                            <label>Phone Number</label>
                            <input type="text" name="phone" class="form-control input-field" placeholder="Number"
                               onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Number'" required>
@@ -980,6 +981,18 @@
                               required="">
                            <label>Subject:</label><input type="text" name="subject" class="form-control input-field"
                               required="">
+                              <!-- test one -->
+                              <label for="numberChildren">How many children do you need daycare for?</label>
+                              
+                              <select name="numberChildren" id="numChildren" class="form-control input-field"
+                              required="">
+                              
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4+">4+</option>
+                              </select>   
+                              
                      </div>
                      <label>Message:</label>
                      <textarea name="message" id="message" class="textarea-field form-control" rows="4"
